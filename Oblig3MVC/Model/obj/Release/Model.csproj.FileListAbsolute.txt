@@ -1,0 +1,4 @@
+C:\Users\stian\Desktop\Oblig3MVC_s189113\Oblig3MVC\Model\bin\Release\Model.dll
+C:\Users\stian\Desktop\Oblig3MVC_s189113\Oblig3MVC\Model\bin\Release\Model.pdb
+C:\Users\stian\Desktop\Oblig3MVC_s189113\Oblig3MVC\Model\obj\Release\Model.dll
+C:\Users\stian\Desktop\Oblig3MVC_s189113\Oblig3MVC\Model\obj\Release\Model.pdb

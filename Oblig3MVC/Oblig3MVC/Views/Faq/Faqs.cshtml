@@ -1,0 +1,72 @@
+﻿@model List<Oblig3MVC.Models.Kategori>
+
+@{
+    ViewBag.Title = "Faqs";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Faqs</title>
+</head>
+<body>
+    <div>
+        <br />
+        <br />
+        <h4>Faqs:</h4><br />
+        <br />
+        
+   
+      
+       
+        <table>
+            @foreach (var kategori in Model)
+            {
+                if (kategori.katid == "1") { 
+                <tr>
+
+                    <td>
+
+                        @Html.ActionLink(kategori.kategori, "Faq1")
+                    <td />
+
+                </tr>
+                }
+                else if (kategori.katid == "2")
+                {
+                    <tr>
+
+                        <td>
+
+                            @Html.ActionLink(kategori.kategori, "Faq2")
+                        <td />
+
+                    </tr>
+                }
+                else if (kategori.katid == "3")
+                {
+                    <tr>
+
+                        <td>
+
+                            @Html.ActionLink(kategori.kategori, "Faq3")
+                        <td />
+
+                    </tr>
+                }
+            }
+        </table>
+        <br />
+
+        @ViewBag.Melding
+        @Html.ActionLink("Trykk her", "../Contactform/Contact")
+        <br/>
+        @ViewBag.Melding2
+        @Html.ActionLink("Trykk her", "../Contactform/Spm")
+
+    </div>
+</body>
+</html>
+
+
+

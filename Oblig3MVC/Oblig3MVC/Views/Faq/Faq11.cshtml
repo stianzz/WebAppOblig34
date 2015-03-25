@@ -1,0 +1,60 @@
+﻿@model List<Oblig3MVC.Models.Faq>
+
+@{
+    ViewBag.Title = "Faq1";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ListKategorier</title>
+</head>
+<body>
+    <div>
+        <br />
+        <br />
+        <h4>Faqs:</h4><br />
+        <br />
+
+        <table>
+
+            @foreach (var Faq in Model)
+            {
+                if (Faq.id == 1)
+                {
+                    <tr>
+
+                        <td>
+
+
+                             @Html.ActionLink(Faq.problem, "Faq1")
+                        <td />
+
+                    </tr>
+                }
+            }
+            </table>
+            <br/>
+        <table>
+            @foreach (var Faq in Model)
+            {
+                if (Faq.id == 1)
+                {
+                    <tr>
+
+                        <td>
+
+
+                            @Html.DisplayFor(m => Faq.losning)
+                        <td />
+
+                    </tr>
+                }
+            }
+        </table>
+
+
+
+    </div>
+</body>
+</html>

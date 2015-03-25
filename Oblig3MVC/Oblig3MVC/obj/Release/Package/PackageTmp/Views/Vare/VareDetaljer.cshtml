@@ -1,0 +1,74 @@
+﻿@model Oblig3MVC.Model.VareModel
+
+@{
+    ViewBag.Title = "VareDetaljer";
+}
+
+<h3>Vare: @Model.Navn</h3>
+
+<div>
+    <h4>VareModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.VareId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VareId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Navn)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Navn)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pris)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pris)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Antall)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Antall)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VareArtUrl)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VareArtUrl)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KatNavn)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KatNavn)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Land)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Land)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Til vareliste", "AlleVarer", "Vare", new { @class = "btn btn-success " })
+    @Html.ActionLink("Endre", "EndreVare", "Vare", new { id = Model.VareId }, new { @class = "btn btn-danger " })
+</p>

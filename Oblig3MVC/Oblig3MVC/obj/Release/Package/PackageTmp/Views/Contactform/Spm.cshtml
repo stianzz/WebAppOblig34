@@ -1,0 +1,14 @@
+﻿@model List<Oblig3MVC.Models.Spm>
+@{
+    ViewBag.Title = "Spm";
+}
+
+<br />
+<br />
+<h4>Tidligere stilte spørsmål:</h4><br />
+<br />
+
+@foreach (var Spm in Model)
+{
+        @Html.DisplayFor(m => Spm.innsendtespørsmål); <br/>
+}

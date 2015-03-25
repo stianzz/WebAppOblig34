@@ -1,0 +1,95 @@
+﻿@model Oblig3MVC.Model.Admin
+
+@{
+    ViewBag.Title = "SlettEnAdmin";
+}
+
+
+<h2>Er du sikker på at vil slette denne admin?</h2>
+<div>
+    <h4>Admin: @Model.Fornavn @Model.Etternavn</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Aid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Aid)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fornavn)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fornavn)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Etternavn)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Etternavn)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Adresse)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Adresse)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Postnr)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Postnr)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Epost)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Epost)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Rolle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Rolle)
+        </dd>
+
+        <!--<dt>
+            @Html.DisplayNameFor(model => model.Passord)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Passord)
+        </dd>-->
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Poststed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Poststed)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            @Html.ActionLink("Adminliste", "AlleAdminer", new { tom = "" }, new { @class = "btn btn-info " })
+            <input type="submit" value="Slett" class="btn btn-danger" /> 
+        </div>
+    }
+</div>

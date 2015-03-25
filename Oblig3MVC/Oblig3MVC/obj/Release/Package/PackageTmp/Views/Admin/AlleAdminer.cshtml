@@ -1,0 +1,83 @@
+﻿@model IEnumerable<Oblig3MVC.Model.Admin>
+
+@{
+    ViewBag.Title = "AlleAdminer";
+}
+
+<h2>Alle Adminer</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Aid)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fornavn)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Etternavn)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Adresse)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Postnr)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Epost)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Rolle)
+        </th>
+        <!--<th>
+            @Html.DisplayNameFor(model => model.Passord)
+        </th>-->
+        <th>
+            @Html.DisplayNameFor(model => model.Poststed)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Aid)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fornavn)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Etternavn)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Adresse)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Postnr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Epost)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Rolle)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Passord)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Poststed)
+            </td>
+            <td>
+                @Html.ActionLink("Endre", "EndreAdmin", new { id = item.Aid }, new { @class = "btn btn-success btn-sm" })
+                @Html.ActionLink("Detalj", "AdminDetaljer", new { id = item.Aid }, new { @class = "btn btn-info btn-sm" })
+                @Html.ActionLink("Slett", "SlettEnAdmin", new { id = item.Aid }, new { @class = "btn btn-danger btn-sm" })
+            </td>
+        </tr>
+    }
+
+</table>
+<p>
+    @Html.ActionLink("Adminside", "AdminSide", "Admin", new { @class = "btn btn-info" })
+    @Html.ActionLink("Registrer en ny admin", "Registrer", "Admin", new { @class = "btn btn-success" })
+</p>

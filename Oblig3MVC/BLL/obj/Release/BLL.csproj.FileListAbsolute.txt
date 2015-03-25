@@ -1,0 +1,11 @@
+C:\Users\stian\Desktop\Oblig3MVC_s189113\Oblig3MVC\BLL\bin\Release\BLL.dll
+C:\Users\stian\Desktop\Oblig3MVC_s189113\Oblig3MVC\BLL\bin\Release\BLL.pdb
+C:\Users\stian\Desktop\Oblig3MVC_s189113\Oblig3MVC\BLL\bin\Release\DAL.dll
+C:\Users\stian\Desktop\Oblig3MVC_s189113\Oblig3MVC\BLL\bin\Release\Model.dll
+C:\Users\stian\Desktop\Oblig3MVC_s189113\Oblig3MVC\BLL\bin\Release\EntityFramework.dll
+C:\Users\stian\Desktop\Oblig3MVC_s189113\Oblig3MVC\BLL\bin\Release\DAL.pdb
+C:\Users\stian\Desktop\Oblig3MVC_s189113\Oblig3MVC\BLL\bin\Release\Model.pdb
+C:\Users\stian\Desktop\Oblig3MVC_s189113\Oblig3MVC\BLL\bin\Release\EntityFramework.xml
+C:\Users\stian\Desktop\Oblig3MVC_s189113\Oblig3MVC\BLL\obj\Release\BLL.csprojResolveAssemblyReference.cache
+C:\Users\stian\Desktop\Oblig3MVC_s189113\Oblig3MVC\BLL\obj\Release\BLL.dll
+C:\Users\stian\Desktop\Oblig3MVC_s189113\Oblig3MVC\BLL\obj\Release\BLL.pdb

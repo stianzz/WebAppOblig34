@@ -1,0 +1,84 @@
+﻿@model Oblig3MVC.Model.Admin
+
+@{
+    ViewBag.Title = "Innlogging - Admin";
+}
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <hr />
+        <div>
+            @if (ViewBag.AdminInnlogget == true)
+            {
+                                             
+                 @* @{ ViewBag.Title = "AdminSide";  }  *@
+                <h2>AdminSide</h2>
+
+                
+                <h4>Administrering av varer</h4>
+                <table>
+                    <!--<thead><tr>Administrering av varer</tr></thead>-->
+                    <tbody>
+                        <tr><td>@Html.ActionLink(" Liste over varer", "AlleVarer", "Vare")</td></tr>
+                        <tr><td>@Html.ActionLink(" Registrer ny vare", "SettInnNyVare", "Vare")</td></tr>
+                        <tr><td>@Html.ActionLink(" Fjern eller endre ", "AlleVarer", "Vare")</td></tr>
+                    </tbody>
+                </table>
+                <h4>Administrering av ansatte</h4>
+                <table>
+                    <!--<thead><tr> Administrering av ansatte</tr></thead>-->
+                    <tbody>
+                        <tr><td>@Html.ActionLink(" Registrer ny admin", "Registrer", "Admin")</td></tr>
+                        <tr><td>@Html.ActionLink(" Liste over adminer", "AlleAdminer", "Admin")</td></tr>
+                        <tr><td>@Html.ActionLink(" Fjern eller endre ", "AlleAdminer", "Admin")</td></tr>
+                    </tbody>
+                </table>
+
+                <div><p></p><p></p></div>
+                <div>
+              <!--      @Html.ActionLink("Logg ut", "LoggUt", "Admin", new { @class = "btn btn-success" }) -->
+                </div>
+            }
+            
+            
+            else
+            {
+                
+    <h3>Innlogging for adminer </h3>
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="form-group">
+        @Html.LabelFor(model => model.Epost, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Epost, new { htmlAttributes = new { @class = "form-control", Placeholder = "stian.bodo@gmail.com" } })
+            @Html.ValidationMessageFor(model => model.Epost, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Passord, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Passord, new { htmlAttributes = new { @class = "form-control", Placeholder = "stian" } })
+            @Html.ValidationMessageFor(model => model.Passord, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Logg inn" class="btn btn-success" />
+        </div>
+    </div>
+    
+    }
+        </div>
+    </div>
+}
+
+
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+

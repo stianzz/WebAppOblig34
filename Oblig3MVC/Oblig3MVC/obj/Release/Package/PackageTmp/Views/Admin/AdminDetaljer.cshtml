@@ -1,0 +1,89 @@
+﻿@model Oblig3MVC.Model.Admin
+
+@{
+    ViewBag.Title = "AdminDetaljer";
+}
+
+
+<div>
+    <h4>Admin: @Model.Fornavn @Model.Etternavn</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Aid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Aid)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fornavn)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fornavn)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Etternavn)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Etternavn)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Adresse)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Adresse)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Postnr)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Postnr)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Epost)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Epost)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Rolle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Rolle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Passord)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Passord)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Poststed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Poststed)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Adminliste", "AlleAdminer", "Admin", new { @class = "btn btn-success" })
+    @Html.ActionLink("Endre", "EndreAdmin", new { id = Model.Aid }, new { @class = "btn btn-danger" }) 
+</p>

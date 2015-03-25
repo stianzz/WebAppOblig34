@@ -1,0 +1,75 @@
+﻿@model Oblig3MVC.Models.Bruker
+
+@{
+    ViewBag.Title = "Contact";
+}
+<br />
+<br />
+<h4>Kontaktskjem</h4><br />
+<br />
+<p>På grunn av mailfunksjonen så har jeg opprettet en egen mailadresse for dette prosjektet i Gmail.</p>
+<p>Man kan bruke denne for å logge inn å kontrollere at funksjonen fungerer.</p>
+<br />
+<p>Brukernavn: webapplikasjoners189113@gmail.com</p>
+<p>Passord: webapplikasjoner</p>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <legend></legend>
+
+        <div class="editor-label">
+
+            @Html.LabelFor(model => model.Fornavn)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Fornavn)
+            @Html.ValidationMessageFor(model => model.Fornavn)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Etternavn)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Etternavn)
+            @Html.ValidationMessageFor(model => model.Etternavn)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Telefon)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Telefon)
+            @Html.ValidationMessageFor(model => model.Telefon)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Email)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Email)
+            @Html.ValidationMessageFor(model => model.Email)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Spørsmål)
+        </div>
+        <div class="editor-field">
+            @Html.TextAreaFor(model => model.Spørsmål)
+            @Html.ValidationMessageFor(model => model.Spørsmål)
+        </div>
+       
+
+        <p>
+            <input type="submit" value="Send" />
+        </p>
+    </fieldset>
+}
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+
+

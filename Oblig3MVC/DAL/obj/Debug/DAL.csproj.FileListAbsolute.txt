@@ -1,0 +1,12 @@
+C:\Users\stian\Desktop\Oblig3MVC_s189113\Oblig3MVC\DAL\bin\Debug\DAL.dll.config
+C:\Users\stian\Desktop\Oblig3MVC_s189113\Oblig3MVC\DAL\bin\Debug\DAL.dll
+C:\Users\stian\Desktop\Oblig3MVC_s189113\Oblig3MVC\DAL\bin\Debug\DAL.pdb
+C:\Users\stian\Desktop\Oblig3MVC_s189113\Oblig3MVC\DAL\bin\Debug\EntityFramework.dll
+C:\Users\stian\Desktop\Oblig3MVC_s189113\Oblig3MVC\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\stian\Desktop\Oblig3MVC_s189113\Oblig3MVC\DAL\bin\Debug\Model.dll
+C:\Users\stian\Desktop\Oblig3MVC_s189113\Oblig3MVC\DAL\bin\Debug\Model.pdb
+C:\Users\stian\Desktop\Oblig3MVC_s189113\Oblig3MVC\DAL\bin\Debug\EntityFramework.xml
+C:\Users\stian\Desktop\Oblig3MVC_s189113\Oblig3MVC\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\stian\Desktop\Oblig3MVC_s189113\Oblig3MVC\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\stian\Desktop\Oblig3MVC_s189113\Oblig3MVC\DAL\obj\Debug\DAL.dll
+C:\Users\stian\Desktop\Oblig3MVC_s189113\Oblig3MVC\DAL\obj\Debug\DAL.pdb
